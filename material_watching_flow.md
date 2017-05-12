@@ -30,11 +30,9 @@ cd1(no)->io2(right)->op1
 st=>start: 処理開始
 ed=>end: 処理終了
 
-op1=>operation: グレイスケール処理
-op2=>operation: 二値化
-op3=>operation: 輝度値 取得
-op4=>operation: 正規化
-op5=>operation: OK/NG判定
+op1=>operation: HSV 変換処理
+op2=>operation: 指定色にマスク 生成
+op3=>operation: OK/NG判定
 
-st->op1->op2->op3->op4->op5->ed
+st->op1->op2->op3->ed
 ```
